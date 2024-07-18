@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desa Lebak Cilong</title>
+    <link rel="icon" type="image/x-icon" href="img/lambang_kukar.ico">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        @tailwind base;
+        @tailwind components;
+        @tailwind utilities;
+
+        html {
+            font-family: 'Source Sans Pro', sans-serif;
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <div class="min-h-full">
+        <nav class="bg-gray-100">
+            <div class="px-4 shadow md:shadow-none py-3">
+              <div class="flex h-16 items-center justify-between md:mx-10">
+                <div class="flex items-center text-xl md:text-3xl font-bold text-gray-800">
+                  <!-- <img class="h-10 w-10 mr-2" src="img/" alt="b"> -->
+                  Desa Lebak Cilong
+                </div>
+                <div class="hidden flex justify-end md:block">
+                  <div class="flex justify-end items-baseline gap-2">
+                    <a href="#profil" class="px-5 py-2 rounded-md text-xl font-bold text-gray-800 hover:bg-green-700 hover:text-gray-100">Profil</a>
+                    <a href="#lokasi" class="px-5 py-2 rounded-md text-xl font-bold text-gray-800 hover:bg-green-700 hover:text-gray-100">Lokasi</a>
+                    <a href="#visi&misi" class="px-5 py-2 rounded-md text-xl font-bold text-gray-800 hover:bg-green-700 hover:text-gray-100">Visi & Misi</a>
+                    <a href="#video" class="px-5 py-2 rounded-md text-xl font-bold text-gray-800 hover:bg-green-700 hover:text-gray-100">Video</a>
+                  </div>
+                </div>  
+                <div class="md:hidden">
+                  <button id="toggleMenu" class="text-gray-800 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div id="mobileMenu" class="hidden md:hidden px-2 pt-2 pb-3 space-y-1">
+              <a href="#profil" class="block rounded-md px-3 py-2 text-base font-bold text-gray-800 hover:bg-gray-100 hover:text-gray-100">Profil</a>
+              <a href="#lokasi" class="block rounded-md px-3 py-2 text-base font-bold text-gray-800 hover:bg-gray-100 hover:text-gray-100">Lokasi</a>
+              <a href="#visi&misi" class="block rounded-md px-3 py-2 text-base font-bold text-gray-800 hover:bg-gray-100 hover:text-gray-100">Visi & Misi</a>
+              <a href="#video" class="block rounded-md px-3 py-2 text-base font-bold text-gray-800 hover:bg-gray-100 hover:text-gray-100">Video</a>
+            </div>
+        </nav>
+    </div>
+
+    <div class="flex flex-col gap-10 md:gap-20">
+        <header class="flex-grow bg-cover bg-center bg-no-repeat md:bg-fixed relative py-20" style="background-image: url('img/bg-1.jpg');">
+            <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+            <div class="relative z-10 text-white py-5 text-center flex flex-col gap-5 select-none">
+                <h1 class="text-xl md:text-7xl font-bold">
+                    Selamat Datang
+                </h1>
+                <h1 class="text-xl md:text-7xl font-bold">
+                    Di Website 
+                </h1>
+                <h1 class="text-xl md:text-7xl font-bold">
+                    Desa Lebak Cilong
+                </h1>
+            </div>
+        </header>
+    
+        <main class="mx-3 md:mx-10 flex flex-col gap-5 md:gap-20 text-gray-800">
+            <div class="flex md:flex-row flex-col gap-3 md:gap-10 md:mb-10" id="profil">
+                <h2 class="md:hidden text-xl md:text-4xl font-bold h-8 md:h-12 font-bold border-b-2 border-gray-700">Desa Lebak Cilong</h2>
+                <img src="img/bg-1.jpg" alt="" class="md:w-1/2 rounded-md">
+                <div class="flex flex-col gap-2 md:gap-5 md:w-1/2">
+                    <h2 class="hidden md:block text-xl md:text-4xl font-bold h-8 md:h-12 font-bold border-b-2 border-gray-700">Desa Lebak Cilong</h2>
+                    <p class="text-justify">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore illum qui nemo, maiores in magni fugiat recusandae minus nesciunt dolore sed, vel tempora, neque debitis! Mollitia quas minima iure ut?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium magni placeat dolorem non porro quasi dolor neque atque, quod ex quisquam eos error mollitia sit sed dolore corporis autem temporibus!
+                    </p>
+                </div>
+                <div class="md:border-b md:border-2 border-green-700"></div>
+            </div>
+            
+            <div class="flex gap-2 md:gap-10 md:flex-row flex-col-reverse" id="lokasi">
+                <div class="md:border-b md:border-2 border-green-700"></div>
+                <div class="flex flex-col gap-2 md:gap-5 md:w-1/2">
+                    <h2 class="hidden md:block text-xl md:text-4xl font-bold h-8 md:h-12 font-bold border-b-2 border-gray-700"> Lokasi Desa Lebak Cilong</h2>
+                    <p class="text-justify">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore illum qui nemo, maiores in magni fugiat recusandae minus nesciunt dolore sed, vel tempora, neque debitis! Mollitia quas minima iure ut?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium magni placeat dolorem non porro quasi dolor neque atque, quod ex quisquam eos error mollitia sit sed dolore corporis autem temporibus!
+                    </p>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127669.46430903373!2d116.56431545000001!3d-0.49277394999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2df6571c4ea88981%3A0x4d1a151dbed9e97!2sLebaq%20Cilang%2C%20Kec.%20Muara%20Wis%2C%20Kabupaten%20Kutai%20Kartanegara%2C%20Kalimantan%20Timur!5e0!3m2!1sid!2sid!4v1721295872052!5m2!1sid!2sid" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    class="md:w-1/2 rounded-md">
+                </iframe>
+                <h2 class="md:hidden text-xl md:text-4xl font-bold h-8 md:h-12 font-bold border-b-2 border-gray-700"> Lokasi Desa Lebak Cilong</h2>
+            </div>
+            
+            <div class="flex flex-col gap-3 md:gap-10" id="visi&misi">
+                <h1 class="text-xl md:text-4xl md:text-center h-8 md:h-12 font-bold border-b-2 border-gray-700">
+                    Visi Misi Desa Lebak Cilong
+                </h1>
+                <div class="flex flex-col md:flex-row gap-3 md:gap-20">
+                    <div class="flex flex-col md:gap-5 md:w-1/2">
+                        <h2 class="text-xl md:text-4xl font-bold text-gray-800 text-center"> Visi </h2>
+                        <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum iusto voluptate, consequatur quod sunt explicabo accusamus quia ullam maiores aliquid doloribus voluptatum molestias. Iste quod sunt quibusdam modi nesciunt quasi!</p>
+                    </div>
+                    <div class="flex flex-col md:gap-5 md:w-1/2">
+                        <h2 class="text-xl md:text-4xl font-bold text-gray-800 text-center"> Misi </h2>
+                        <ul class="list-disc text-justify ml-5 md:mx-0">
+                            <li>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum iusto voluptate, consequatur 
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum iusto voluptate, consequatur 
+                            </li>
+                            <li>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum iusto voluptate, consequatur
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum iusto voluptate, consequatur
+                            </li>
+                            <li>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum iusto voluptate, consequatur
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum iusto voluptate, consequatur
+                            </li>
+                            <li>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum iusto voluptate, consequatur
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum iusto voluptate, consequatur
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- <div class="border-b border-2 border-gray-800"></div> -->
+
+            <div class="space-y-5 mb-10" id="video">
+                <h1 class="text-xl md:text-4xl md:text-center font-bold h-8 md:h-12 font-bold border-b-2 border-gray-700">
+                    Video Desa Lebak Cilong
+                </h1>
+                <div class="flex flex-col md:flex-row gap-5 justify-center">
+                    <iframe src="https://www.youtube.com/embed/KCCFgCLRAZo?si=tekoMnelPneO_oxH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/hEHZbgo-LdM?si=KmJ81YnK04EM7uLx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/m-QeShSRoo8?si=vk-2DGl8MPze_6XJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer class="bg-green-700 text-white py-6 mt-8">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col-reverse md:flex-row md:justify-between items-center gap-5">
+            <p class="font-bold text-lg">
+                &copy; 2024 KKN 44 Lebak Cilong
+            </p>
+
+            <div class="flex space-x-8 md:space-x-5">
+                <a href="https://wa.me/" class="hover:text-gray-400">
+                    <svg class="h-8 w-8 fill-current" viewBox="0 0 24 24">
+                        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.298-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/" class="hover:text-gray-400">
+                    <svg class="h-8 w-8 fill-current" viewBox="0 0 24 24">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                    </svg>
+                </a>
+                <a href="https://www.youtube.com" class="hover:text-gray-400">
+                    <svg class="h-8 w-8 fill-current" viewBox="0 0 24 24">
+                        <path d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .505 6.205a31.241 31.241 0 0 0-.224 5.805 31.241 31.241 0 0 0 .224 5.805 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.241 31.241 0 0 0 .224-5.805 31.24 31.24 0 0 0-.224-5.805z" />
+                        <path class="text-green-700" d="M9.75 15.402l6.5-3.736-6.5-3.735v7.471z" />
+                    </svg>
+                </a>
+            </div>
+    </footer>
+
+    <script>
+        const toggleMenu = document.getElementById('toggleMenu');
+        const mobileMenu = document.getElementById('mobileMenu');
+      
+        toggleMenu.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
