@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desa Lebak Cilong</title>
+    <link rel="icon" type="image/x-icon" href="img/logoKukar.ico">
+    <link href="src/css/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+<body>
+    <!-- nav menu -->
+    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+        <div class="container">
+            <div class="flex items-center justify-end md:justify-between flex-row-reverse md:flex-row">
+                <div class="px-4">
+                    <a href="/" class="inline-flex gap-3 items-center font-bold text-xl text-primary py-6">
+                        <img src="img/logoKukar.PNG" width="40" alt="Anhar Khoirun Najib">
+                        <div>
+                            <h3>
+                                Desa Lebak Cilong
+                            </h3>
+                            <p class="text-xs font-semibold text-secondary">
+                                Kabupaten Kutai Kartanegara
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="flex items-center px-4 ml-2 md:ml-0">
+                    <button id="hamburger" name="hamburger" type="button" class="md:hidden block absolute left-4">
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-top-left "></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left "></span>
+                    </button>
+
+                    <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full -left-1 top-full md:block md:static md:bg-transparent md:max-w-full md:shadow-none md:rounded-none animate__animated animate__fadeInLeft font-bold">
+                        <ul class="block md:flex z-20">
+                            <li class="group">
+                                <a href="#profil" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Profil</a>
+                            </li>
+                            <li class="group">
+                                <a href="#lokasi" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Lokasi</a>
+                            </li>
+                            <li class="group">
+                                <a href="#visi&misi" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Visi & Misi</a>
+                            </li>
+                            <li class="group">
+                                <a href="#struktur" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Struktur</a>
+                            </li>
+                            <li class="group">
+                                <a href="#berita" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Berita</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- hero -->
+    <section class="py-14">
+        <div class="flex-grow bg-cover bg-center bg-no-repeat md:bg-fixed relative top-10 py-24"
+        style="background-image: url('img/mainBg.png');">
+            <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+            <div class="relative text-white py-5 text-center flex flex-col gap-5 select-none animate__animated animate__fadeInUp">
+                <h1 class="text-4xl md:text-7xl font-bold">
+                    Selamat Datang
+                </h1>
+                <h1 class="text-4xl md:text-7xl font-bold">
+                    Di Website
+                </h1>
+                <h1 class="text-4xl md:text-7xl font-bold">
+                    Desa Lebak Cilong
+                </h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- Profil -->
+    <section id="profil" class="py-24 item-center">
+        <div class="container">
+            <div class="flex">
+                <div class="w-full px-4 mb-10 md:mb-0 md:w-2/3">
+                    <h3 class="font-bold uppercase text-primary text-2xl mb-2 border-b-2 border-primary">
+                        Profil Desa Lebak Cilong
+                    </h3>
+                    <div class="md:hidden md:w-1/3 mb-3 shadow-xl">
+                        <img src="img/mainBg.png" alt="Desa Lebak Cilong" class="max-w-full mx-auto rounded-lg cursor-pointer"/>
+                    </div>
+                    <p class="font-medium text-base text-light text-justify">
+                        Desa Lebak Cilong terletak di kabupaten Kutai Kartanegara, kecamatan Muara Wis. Desa Lebak Cilong memiliki luas 
+                        13.608,55 hektar dan jumlah penduduk 2005 jiwa. Mayoritas penduduknya bekerja sebagai petani, berkebun, dan 
+                        pengrajin tusuk sate.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, accusamus quaerat. Cumque totam velit esse quam id? Unde incidunt ducimus ea labore soluta. Exercitationem vel vitae natus, atque est beatae.
+                    </p>
+                </div>
+                <div class="hidden md:block md:w-1/3 hover:shadow-xl">
+                    <img src="img/mainBg.png" alt="Desa Lebak Cilong" class="max-w-full mx-auto rounded-lg cursor-pointer"/>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- lokasi -->
+    <section id="lokasi" class="py-24 items-center bg-gray-100">
+        <div class="container">
+            <div class="flex">
+                <div class="hidden md:block md:w-1/2 hover:shadow-xl">
+                    <img src="img/map.jpg" alt="Lokasi Desa Lebak Cilong" class="max-w-full mx-auto rounded-lg cursor-pointer"/>
+                </div>
+                <div class="w-full px-4 mb-10 md:mb-0 md:w-1/2">
+                    <h3 class="font-bold uppercase text-primary text-2xl mb-2 border-b-2 border-primary">
+                        Lokasi Desa Lebak Cilong
+                    </h3>
+                    <div class="md:hidden md:w-1/2 mb-3 shadow-xl">
+                        <img src="img/map.jpg" alt="Lokasi Desa Lebak Cilong" class="max-w-full mx-auto rounded-lg cursor-pointer"/>
+                    </div>
+                    <p class="font-medium text-base text-dark text-justify">
+                        Desa Lebak Cilong terletak di kabupaten Kutai Kartanegara, kecamatan Muara Wis. Desa Lebak Cilong memiliki luas 
+                        13.608,55 hektar dan jumlah penduduk 2005 jiwa. Mayoritas penduduknya bekerja sebagai petani, berkebun, dan 
+                        pengrajin tusuk sate.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, accusamus quaerat. Cumque totam velit esse quam id? Unde incidunt ducimus ea labore soluta. Exercitationem vel vitae natus, atque est beatae.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- visi & misi -->
+    <section id="visi&misi" class="py-24 items-center">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="mx-auto text-center mb-5 md:mb-10">
+                    <h3 class="font-bold uppercase text-primary text-2xl md:mb-2">
+                        Visi & Misi
+                    </h3>
+                    <h1 class="font-bold text-dark text-2xl md:text-4xl md:mb-2">
+                        Desa Lebak Cilong
+                    </h1>
+                    <p class="text-sm text-light">
+                        Berikut Merupakan Visi & Misi Dari Desa Lebak Cilong
+                    </p>
+                </div>
+                <div class="flex flex-col md:flex-row gap-3 md:gap-20">
+                    <div class="flex flex-col md:w-1/2">
+                        <h1 class="font-bold uppercase text-primary text-2xl md:mb-3 text-center underline-offset-4"> 
+                            Visi 
+                        </h1>
+                        <p class="text-justify text-dark text-base">
+                            Terwujudnya masyarakat Desa Lebak Cilong yang maju, mandiri, dan Sejahtera.
+                        </p>
+                    </div>
+                    <div class="flex flex-col md:w-1/2">
+                        <h1 class="font-bold uppercase text-primary text-2xl md:mb-3 text-center"> 
+                            Misi 
+                        </h1>
+                        <ol class="list-decimal font-bold ml-4 text-justify text-dark">
+                            <li class="mb-3">
+                                Peningkatan Kualitas Pendidikan
+                                <ul class="font-medium list-disc pl-4">
+                                    <li>Peningkatan akses dan kualitas pendidikan bagi warga desa melalui program beasiswa.</li>
+                                    <li>Pembangunan fasilitas pendidikan.</li>
+                                    <li>Pelatihan bagi tenaga pendidik.</li>
+                                </ul>
+                            </li>
+                            <li class="mb-3">
+                                Pemberdayaan Ekonomi Masyarakat
+                                <ul class="font-medium list-disc pl-4">
+                                    <li>Mendorong pertumbuhan ekonomi melalui pengembangan pelatihan keterampilan.</li>
+                                    <li>Pengelolaan potensi lokal seperti pertanian, perkebunan, atau kerajinan tangan yaitu tusuk sate.</li>
+                                </ul>
+                            </li>
+                            <li class="mb-3">
+                                Pelestarian Lingkungan
+                                <ul class="font-medium list-disc pl-4">
+                                    <li>Mengimplementasi program-program untuk menjaga dan melestarikan lingkungan desa.</li>
+                                    <li>Pengelolaan sampah yang baik.</li>
+                                    <li>Penghijauan dan pemanfaatan energi terbarukan.</li>
+                                </ul>
+                            </li>
+                            <li class="mb-3">
+                                Peningkatan pelayanan Kesehatan
+                                <ul class="font-medium list-disc pl-4">
+                                    <li>Menyediakan layanan kesehatan yang berkualitas dan terjangkau bagi seluruh warga desa.</li>
+                                    <li>Meningkatkan kesadaran masyarakat tentang pentingnya menjaga kesehatan.</li>
+                                </ul>
+                            </li>
+                            <li class="mb-3">
+                                Pembangunan Infrastruktur
+                                <ul class="font-medium list-disc pl-4">
+                                    <li>Membangun dan memperbaiki infrastruktur desa seperti jalan, jembatan, irigasi, dan fasilitas umum lainnya.</li>
+                                    <li>Mendukung kegiatan ekonomi dan sosial masyarakat.</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- struktur -->
+    <section id="struktur" class="py-24 items-center bg-gray-100">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="mx-auto text-center mb-5 md:mb-10">
+                    <h3 class="font-bold uppercase text-primary text-2xl md:mb-2">
+                        Struktur Pemerintahan
+                    </h3>
+                    <h1 class="font-bold text-dark text-2xl md:text-4xl md:mb-2">
+                        Desa Lebak Cilong
+                    </h1>
+                    <p class="text-sm text-light">
+                        Berikut Merupakan Struktur Pemerintahan Dari Desa Lebak Cilong
+                    </p>
+                </div>
+                
+                <div class="flex">
+                    <div class="w-full px-4 mb-10 md:mb-0 md:w-1/2">
+                        <!-- <h3 class="font-bold uppercase text-primary text-2xl mb-2 border-b-2 border-primary">
+                            Struktur Desa Lebak Cilong
+                        </h3> -->
+                        <div class="md:hidden md:w-1/2 mb-3 shadow-xl">
+                            <img src="img/mainBg.png" alt="Lokasi Desa Lebak Cilong" class="max-w-full mx-auto rounded-lg cursor-pointer"/>
+                        </div>
+                        <p class="font-medium text-base text-dark text-justify">
+                            Desa Lebak Cilong terletak di kabupaten Kutai Kartanegara, kecamatan Muara Wis. Desa Lebak Cilong memiliki luas 
+                            13.608,55 hektar dan jumlah penduduk 2005 jiwa. Mayoritas penduduknya bekerja sebagai petani, berkebun, dan 
+                            pengrajin tusuk sate.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, accusamus quaerat. Cumque totam velit esse quam id? Unde incidunt ducimus ea labore soluta. Exercitationem vel vitae natus, atque est beatae.
+                        </p>
+                    </div>
+                    <div class="hidden md:block md:w-1/2 hover:shadow-xl">
+                        <img src="img/map.jpg" alt="Lokasi Desa Lebak Cilong" class="max-w-full mx-auto rounded-lg cursor-pointer"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- berita -->
+    <section id="berita" class="py-24 items-center">
+        <div class="container">
+            <div class="flex md:flex-row flex-col gap-10">
+                <div class="flex md:w-2/3 flex-col">
+                    <div class="mb-3 pr-2">
+                        <h3 class="font-bold uppercase text-primary text-2xl md:mb-2 border-b-2 border-primary">
+                            Video
+                        </h3>
+                    </div>
+                    <div class="flex flex-wrap">
+                        <iframe src="https://www.youtube.com/embed/KCCFgCLRAZo?si=tekoMnelPneO_oxH"
+                            title="YouTube video player" frameborder="0" 
+                            class="w-1/2 pb-2 pr-2"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                        </iframe>
+                        <iframe src="https://www.youtube.com/embed/hEHZbgo-LdM?si=KmJ81YnK04EM7uLx"
+                            title="YouTube video player" frameborder="0" 
+                            class="w-1/2 pb-2 pr-2"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                        </iframe>
+                        <iframe src="https://www.youtube.com/embed/m-QeShSRoo8?si=vk-2DGl8MPze_6XJ"
+                            title="YouTube video player" frameborder="0" 
+                            class="w-1/2 pb-2 pr-2"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                        </iframe>
+                        <iframe src="https://www.youtube.com/embed/BID69KOC5f8?si=KB7RbF9OBlhTC2He" 
+                            title="YouTube video player" frameborder="0" 
+                            class="w-1/2 pb-2 pr-2"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                        </iframe>
+                        <iframe src="https://www.youtube.com/embed/53UaZz3TgH4?si=q-pJUSRn1a2ecqAO" 
+                            title="YouTube video player" frameborder="0" 
+                            class="w-1/2 pb-2 pr-2"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                            gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                        </iframe>
+                        <iframe src="https://www.youtube.com/embed/fdHKg6XJIjA?si=fWB9YFy6uV7CkB7v" 
+                            title="YouTube video player" frameborder="0" 
+                            class="w-1/2 pb-2 pr-2"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+                <div class="md:w-1/3 gap-3">
+                    <div class="mb-3">
+                        <h3 class="font-bold uppercase text-primary text-2xl md:mb-2 border-b-2 border-primary">
+                            Berita
+                        </h3>
+                    </div>
+                    <div class="w-full p-3 shadow-md hover:shadow-secondary rounded-lg cursor-pointer mb-3">
+                        <img src="img/mainBg.png" class="w-full h-40 mb-2" alt="">
+                        <h3 class="font-bold text-xl text-dark">
+                            Update Berita Hari Ini
+                        </h3>
+                        <p class="text-sm text-light line-clamp-2 mb-3">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero atque culpa molestiae eaque sapiente suscipit, id cumque consequatur magnam quasi maiores autem labore consectetur adipisci exercitationem aliquam fugiat maxime quia.
+                        </p>
+                        <a class="flex font-semibold text-secondary items-center underline" href="">
+                            Baca Selengkapnya
+                        </a>
+                    </div>
+                    <div class="w-full p-3 shadow-md hover:shadow-secondary rounded-lg cursor-pointer">
+                        <img src="img/mainBg.png" class="w-full h-40 mb-2" alt="">
+                        <h3 class="font-bold text-xl text-dark">
+                            Update Berita Hari Ini
+                        </h3>
+                        <p class="text-sm text-light line-clamp-2 mb-3">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero atque culpa molestiae eaque sapiente suscipit, id cumque consequatur magnam quasi maiores autem labore consectetur adipisci exercitationem aliquam fugiat maxime quia.
+                        </p>
+                        <a class="flex font-semibold text-secondary items-center underline" href="">
+                            Baca Selengkapnya
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="pt-16 pb-8 bg-green-800 text-white">
+        <div class="container">
+            <div class="flex container flex-col md:flex-row md:justify-between md:space-x-10 gap-5 mb-8 md:mb-10">
+                <div class="md:w-2/5 mb-5">
+                    <h1 class="text-2xl md:text-3xl font-bol underline underline-offset-8 mb-3">
+                        Desa Lebak Cilong
+                    </h1>
+                    <p class="text-md text-white">
+                        Kecamatan Muara Wis, Kabupaten Kutai Kartanegara
+                    </p>
+                    <p id="textFooter" class="text-sm text-gray-300 text-justify line-clamp-4">
+                        Website profil desa ini merupakan sistem informasi yang dibangun untuk memberikan kemudahan bagi warga dalam mengakses informasi seputar desa. Melalui website ini, warga dapat mengetahui berbagai potensi, program, dan kegiatan yang ada di desa secara terpusat dan up-to-date.
+
+                        Selain itu, website profil desa ini juga berfungsi sebagai media promosi desa untuk menarik minat wisatawan, investor, dan pihak-pihak yang berkepentingan. Dengan memuat informasi lengkap mengenai profil desa, produk unggulan, dan fasilitas yang tersedia, diharapkan desa dapat semakin dikenal dan dapat berkembang ke arah yang lebih baik.
+
+                        Tujuan utama dibangunnya website profil desa ini adalah untuk meningkatkan transparansi, akuntabilitas, dan keterlibatan masyarakat dalam pembangunan desa. Melalui website ini, warga dapat dengan mudah mengakses informasi, memberikan masukan, dan turut serta dalam berbagai program dan kegiatan desa.
+
+                        Dengan demikian, website profil desa ini diharapkan dapat menjadi sarana efektif dalam mengoptimalkan potensi desa, meningkatkan kesejahteraan masyarakat, serta mendukung kemajuan desa di masa depan.
+                    </p>
+                    <button id="profilFooter" name="profilFooter" type="button" class="underline cursor-pointer">
+                        Selengkapnya
+                    </button>
+                </div>
+                <div class="md:w-1/5 space-y-3">
+                    <h1 class="text-xl md:text-2xl font-bold underline underline-offset-4">
+                        Tautan
+                    </h1>
+                    <ul class="text-medium text-gray-200 space-y-1">
+                        <li>
+                            <a class="hover:underline" href="#profil">Profil</a>
+                        </li>
+                        <li>
+                            <a class="hover:underline" href="#lokasi">Lokasi</a>
+                        </li>
+                        <li>
+                            <a class="hover:underline" href="#visi&misi">Visi & Misi</a>
+                        </li>
+                        <li>
+                            <a class="hover:underline" href="struktur">Struktur</a>
+                        </li>
+                        <li>
+                            <a class="hover:underline" href="berita">Berita</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="md:w-2/5">
+                    <h1 class="text-2xl md:text-3xl font-bol underline underline-offset-8 mb-3">
+                        Kontak Kami
+                    </h1>
+                    <div class="flex flex-col gap-2 mb-3">
+                        <p class="text-sm text-gray-300 text-justify">
+                            Jln Mulawarman RT 03, Lebaq Cilang, Kec. Muara Wis, Kabupaten Kutai Kartanegara, Kalimantan Timur. Kode Pos 75562.
+                        </p>
+                        <a href="https://wa.me/085845723207" class="flex flex-row text-sm gap-2 items-center text-gray-300 text-justify hover:underline">
+                            <svg class="h-4 w-4 md:h-5 md:w-5 fill-current" viewBox="0 0 24 24">
+                                <path
+                                    d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.298-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+                            </svg>
+                            +62-888-8888-8888
+                        </a>
+                        <a href="mailto:anharkhoirun@gmail.com" class="flex flex-row text-sm gap-2 items-center text-gray-300 text-justify hover:underline">
+                            <svg class="h-4 w-4 md:h-5 md:w-5 fill-current" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 12.713l-11.985-9.713h23.97l-11.985 9.713zm0 2.574l-12-9.725v15.438h24v-15.438l-12 9.725z" />
+                            </svg>
+                            lebakcilong@gov.co.id
+                        </a>
+                    </div>
+                    <div class="flex items-center space-x-5 justify-normal">
+                        <a href="mailto:anharkhoirun@gmail.com" class="w-9 h-9 rounded-full flex justify-center items-center border border-gray-400 hover:shadow-lg hover:border-primary hover:bg-secondary hover:text-white">
+                            <svg width="20" class="fill-current" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 12.713l-11.985-9.713h23.97l-11.985 9.713zm0 2.574l-12-9.725v15.438h24v-15.438l-12 9.725z" />
+                            </svg>
+                        </a>
+                        <a href="https://wa.me/" class="w-9 h-9 rounded-full flex justify-center items-center border border-gray-400 hover:shadow-lg hover:border-primary hover:bg-secondary hover:text-white">
+                            <svg width="20" class="fill-current" viewBox="0 0 24 24">
+                                <path
+                                    d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.298-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/" class="w-9 h-9 rounded-full flex justify-center items-center border border-gray-400 hover:shadow-lg hover:border-primary hover:bg-secondary hover:text-white">
+                            <svg width="20" class="fill-current" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border border-white mb-5 md:mb-10"></div>
+            
+            <div class="container flex flex-col md:flex-row md:gap-3 items-center md:justify-between">
+                <div class="font-bold text-md text-gray-100 gap-2 flex items-center">
+                    WEBSITE OLEH
+                    <img src="img/logoKKN.png" width="40" alt="">
+                </div>
+                <div class="text-md text-gray-100 space-x-2 flex items-center">
+                    <p>2024 &copy; <span></span> KKN 44 KUTAI KARTANEGARA.</p>
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+
+    <script src="src\js\script.js"></script>
+</body>
+</html>
