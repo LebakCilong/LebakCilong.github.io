@@ -34,18 +34,49 @@ window.onresize = ('resize', checkScreen);
 
 checkScreen();
 
-// profile footer
-const profilFooter = document.querySelector('#profilFooter');
-const text = document.querySelector('#textFooter');
-let isExpand = false;
+// button Expand
+const btnFooter = document.querySelector('#profilFooter');
+const textFooter = document.querySelector('#textFooter');
 
-profilFooter.addEventListener('click', function(){
-    if (isExpand) {
-        text.classList.remove('line-clamp-4');
-        profilFooter.textContent = 'Lebih Sedikit';
+const btnBerita1 = document.querySelector('#btnBerita1');
+const textBerita1 = document.querySelector('#textBerita1');
+
+const btnBerita2 = document.querySelector('#btnBerita2');
+const textBerita2 = document.querySelector('#textBerita2');
+
+let isExpandFooter = false;
+let isExpandBerita1 = false;
+let isExpandBerita2 = false;
+
+btnFooter.addEventListener('click', function(){
+    if (isExpandFooter) {
+        textFooter.classList.remove('line-clamp-4');
+        btnFooter.textContent = 'Lebih Sedikit';
     } else {
-        text.classList.add('line-clamp-4');
-        profilFooter.textContent = 'Selengkapnya';
+        textFooter.classList.add('line-clamp-4');
+        btnFooter.textContent = 'Selengkapnya';
     }
-    isExpand = !isExpand;
+    isExpandFooter = !isExpandFooter;
+});
+
+btnBerita1.addEventListener('click', function(){
+    if (isExpandBerita1) {
+        textBerita1.classList.remove('line-clamp-2');
+        btnBerita1.textContent = 'Lebih Sedikit';
+    } else {
+        textBerita1.classList.add('line-clamp-2');
+        btnBerita1.textContent = 'Baca Selengkapnya';
+    }
+    isExpandBerita1 = !isExpandBerita1;
+});
+
+btnBerita2.addEventListener('click', function(){
+    if (isExpandBerita2) {
+        textBerita2.classList.remove('line-clamp-2');
+        btnBerita2.textContent = 'Lebih Sedikit';
+    } else {
+        textBerita2.classList.add('line-clamp-2');
+        btnBerita2.textContent = 'Baca Selengkapnya';
+    }
+    isExpandBerita2 = !isExpandBerita2;
 });
