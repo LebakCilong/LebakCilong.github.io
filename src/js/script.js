@@ -21,7 +21,7 @@ hamburger.addEventListener('click', function(){
 });
 
 function checkScreen() {
-    if (window.innerWidth < 768) {
+    if (window.innerWidth < 640) {
         document.querySelector('#nav-menu').classList.add('animate__animated');
         document.querySelector('#nav-menu').classList.add('animate__fadeInLeft');
     } else {
@@ -44,9 +44,13 @@ const textBerita1 = document.querySelector('#textBerita1');
 const btnBerita2 = document.querySelector('#btnBerita2');
 const textBerita2 = document.querySelector('#textBerita2');
 
+const btnBerita3 = document.querySelector('#btnBerita3');
+const textBerita3 = document.querySelector('#textBerita3');
+
 let isExpandFooter = false;
 let isExpandBerita1 = false;
 let isExpandBerita2 = false;
+let isExpandBerita3 = false;
 
 btnFooter.addEventListener('click', function(){
     if (isExpandFooter) {
@@ -79,4 +83,15 @@ btnBerita2.addEventListener('click', function(){
         btnBerita2.textContent = 'Baca Selengkapnya';
     }
     isExpandBerita2 = !isExpandBerita2;
+});
+
+btnBerita3.addEventListener('click', function(){
+    if (isExpandBerita3) {
+        textBerita3.classList.remove('line-clamp-2');
+        btnBerita3.textContent = 'Lebih Sedikit';
+    } else {
+        textBerita3.classList.add('line-clamp-2');
+        btnBerita3.textContent = 'Baca Selengkapnya';
+    }
+    isExpandBerita3 = !isExpandBerita3;
 });
